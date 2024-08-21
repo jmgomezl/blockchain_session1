@@ -11,3 +11,7 @@ myBlockchain.addBlock(new Block(6,"25/09/24", {amout:7}));
 
 console.log(JSON.stringify(myBlockchain, null, 4));
 console.log('Is Blockchain valid?',myBlockchain.isChainValid());
+console.log('Blockchain length',myBlockchain.chain.length);
+
+console.log("::::::::::::::GET BLOCK::::::::::::::::::::");
+console.log(myBlockchain.getBlock(2));
